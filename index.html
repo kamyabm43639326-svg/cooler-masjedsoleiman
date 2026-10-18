@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تعمیر، سرویس و نصب کولر گازی و یخچال | تماس: 09053856893</title>
+<meta name="description" content="تعمیر، سرویس و نصب کولر گازی پنجره‌ای، دو تکه و یخچال با اعزام سریع کارشناس. تماس: 09053856893">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0d2b3a; --ink2:#46606e; --ice:#e3f4f8; --sky:#16a8c7; --deep:#0a6f89;
+  --hot:#ff6a1f; --white:#fff; --line:#cfe3ea;
+  --f:'Vazirmatn',Tahoma,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--f);color:var(--ink);background:var(--white);line-height:1.9;padding-bottom:72px}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--hot);outline-offset:3px}
+.wrap{max-width:1120px;margin:auto;padding:0 20px}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:900;font-size:1.15rem;display:flex;align-items:center;gap:10px}
+.logo i{width:34px;height:34px;border-radius:50%;background:var(--sky);display:grid;place-items:center;color:#fff;font-style:normal;font-size:1.1rem}
+nav{display:flex;gap:26px;font-weight:500;font-size:.95rem;color:var(--ink2)}
+nav a:hover{color:var(--deep)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--hot);color:#fff;font-weight:700;padding:10px 22px;border-radius:999px;transition:transform .15s,background .15s}
+.btn:hover{background:#e85a10;transform:translateY(-2px)}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn.alt:hover{background:var(--ink);color:#fff}
+
+/* hero */
+.hero{background:linear-gradient(180deg,var(--ice),#fff);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-top:56px;padding-bottom:64px}
+h1{font-size:clamp(2rem,4.6vw,3.4rem);line-height:1.35;font-weight:900;letter-spacing:-.5px}
+.hero p{margin:18px 0 28px;color:var(--ink2);font-size:1.08rem;max-width:30em}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.cta .btn{padding:14px 28px;font-size:1.05rem}
+.phone-big{direction:ltr;unicode-bidi:plaintext}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.chips span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:.88rem;color:var(--deep);font-weight:500}
+
+/* image slots: real photo if file exists, otherwise a clean illustrated placeholder */
+.ph{position:relative;border-radius:28px;overflow:hidden;background:linear-gradient(135deg,#bfe8f2,#7cc8dc);display:grid;place-items:center;color:#fff;isolation:isolate}
+.ph::before{content:attr(data-label);position:absolute;inset:auto 0 14px 0;text-align:center;font-size:.8rem;opacity:.85;z-index:0}
+.ph svg{width:46%;opacity:.9;z-index:0}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.hero .ph{aspect-ratio:4/4.4;border-radius:200px 200px 28px 28px}
+
+/* services */
+section{padding:76px 0}
+h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;margin-bottom:10px}
+.sub{color:var(--ink2);max-width:36em;margin-bottom:40px}
+.svc{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.item{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;padding:16px;border-radius:22px;border:1px solid var(--line);background:#fff;transition:border-color .2s}
+.item:hover{border-color:var(--sky)}
+.item .ph{aspect-ratio:1;border-radius:16px}
+.item h3{font-size:1.15rem;margin-bottom:4px}
+.item p{font-size:.93rem;color:var(--ink2);line-height:1.8}
+.item ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:.84rem;color:var(--deep);font-weight:500}
+.item li::before{content:"✓ ";color:var(--sky)}
+
+/* process */
+.dark{background:var(--ink);color:#fff}
+.dark .sub{color:#a9c3cf}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;position:relative}
+.step{padding:0 18px 0 0;counter-increment:s;border-right:2px solid #1d4a5e;padding-right:20px}
+.step::before{content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--sky);color:var(--ink);font-weight:900;margin-bottom:12px;margin-right:-39px;position:relative}
+.step h3{font-size:1.05rem;margin-bottom:4px}
+.step p{font-size:.9rem;color:#a9c3cf;line-height:1.8}
+
+/* why + gallery */
+.why{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.why ul{list-style:none;display:grid;gap:16px}
+.why li{padding-right:18px;border-right:4px solid var(--sky)}
+.why li b{display:block;font-size:1.05rem}
+.why li span{color:var(--ink2);font-size:.93rem}
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.gal .ph{aspect-ratio:1;border-radius:20px}
+.gal .ph:first-child{grid-row:span 2;aspect-ratio:auto}
+
+/* contact */
+.contact{background:var(--ice)}
+.box{background:#fff;border-radius:32px;padding:44px;display:grid;grid-template-columns:1.2fr 1fr;gap:30px;align-items:center;border:1px solid var(--line)}
+.num{font-size:clamp(2rem,5vw,3.2rem);font-weight:900;color:var(--deep);direction:ltr;display:inline-block;letter-spacing:1px}
+.box p{color:var(--ink2)}
+.areas{display:flex;flex-direction:column;gap:10px}
+
+footer{padding:26px 0;text-align:center;color:var(--ink2);font-size:.88rem}
+
+/* sticky call bar (mobile) */
+.fab{position:fixed;inset:auto 0 0 0;z-index:30;padding:10px 16px;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-top:1px solid var(--line);display:none}
+.fab .btn{width:100%;justify-content:center;padding:14px;font-size:1.05rem}
+
+/* one entrance moment: hero */
+@media (prefers-reduced-motion:no-preference){
+  .hero .wrap>div:first-child{animation:in .8s ease both}
+  .hero .ph{animation:in .8s .15s ease both}
+  @keyframes in{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+}
+
+@media(max-width:900px){
+  nav{display:none}
+  .hero .wrap,.why,.box{grid-template-columns:1fr}
+  .hero .ph{aspect-ratio:4/3;border-radius:28px;order:-1}
+  .svc{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr;row-gap:30px}
+  .fab{display:block}
+}
+@media(max-width:520px){
+  .item{grid-template-columns:96px 1fr}
+  .steps{grid-template-columns:1fr}
+  .box{padding:28px 22px}
+  .bar .btn{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top"><i>❄</i> تعمیرات کولر و یخچال</a>
+    <nav>
+      <a href="#services">خدمات</a>
+      <a href="#process">روند کار</a>
+      <a href="#why">چرا ما</a>
+      <a href="#contact">تماس</a>
+    </nav>
+    <a class="btn" href="tel:09053856893">تماس فوری</a>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>کولر یا یخچالتان خراب شده؟ همین امروز تعمیرش می‌کنیم.</h1>
+      <p>تعمیر، سرویس و نصب کولر گازی پنجره‌ای، اسپلیت دو تکه و یخچال، با حضور کارشناس در محل و اعلام هزینه پیش از شروع کار.</p>
+      <div class="cta">
+        <a class="btn" href="tel:09053856893">📞 <span class="phone-big">09053856893</span></a>
+        <a class="btn alt" href="#services">مشاهده خدمات</a>
+      </div>
+      <div class="chips">
+        <span>کولر پنجره‌ای</span><span>اسپلیت دو تکه</span><span>یخچال</span><span>نصب و جابه‌جایی</span>
+      </div>
+    </div>
+    <figure class="ph" data-label="عکس تکنسین در حال کار — images/hero.jpg">
+      <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><rect x="6" y="14" width="52" height="22" rx="5"/><path d="M14 28h36M20 44c0 4-3 4-3 8M32 44c0 4-3 4-3 8M44 44c0 4-3 4-3 8"/></svg>
+      <img src="images/hero.jpg" alt="تکنسین در حال تعمیر کولر گازی" onerror="this.remove()">
+    </figure>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>خدمات ما</h2>
+    <p class="sub">برای هر دستگاه، سه کار اصلی انجام می‌دهیم: تعمیر خرابی، سرویس دوره‌ای و نصب اصولی.</p>
+    <div class="svc">
+      <article class="item">
+        <figure class="ph" data-label="images/split.jpg">
+          <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><rect x="6" y="14" width="52" height="20" rx="5"/><path d="M14 40v10M32 40v14M50 40v10"/></svg>
+          <img src="images/split.jpg" alt="نصب کولر گازی اسپلیت دو تکه" onerror="this.remove()">
+        </figure>
+        <div>
+          <h3>کولر گازی دو تکه (اسپلیت)</h3>
+          <p>نصب، شارژ گاز، رفع نشتی، تعویض کمپرسور و برد، شست‌وشوی داخلی و بیرونی.</p>
+          <ul><li>نصب</li><li>شارژ گاز</li><li>سرویس</li></ul>
+        </div>
+      </article>
+      <article class="item">
+        <figure class="ph" data-label="images/window.jpg">
+          <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><rect x="8" y="12" width="48" height="40" rx="5"/><circle cx="32" cy="32" r="10"/><path d="M32 22v20M22 32h20"/></svg>
+          <img src="images/window.jpg" alt="تعمیر کولر گازی پنجره‌ای" onerror="this.remove()">
+        </figure>
+        <div>
+          <h3>کولر گازی پنجره‌ای</h3>
+          <p>تعمیر فن و کمپرسور، رفع صدای اضافه، کم‌سردی و چکه کردن آب، نصب و جابه‌جایی.</p>
+          <ul><li>تعمیر</li><li>رفع چکه</li><li>جابه‌جایی</li></ul>
+        </div>
+      </article>
+      <article class="item">
+        <figure class="ph" data-label="images/fridge.jpg">
+          <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><rect x="16" y="6" width="32" height="52" rx="5"/><path d="M16 26h32M22 14v6M22 32v10"/></svg>
+          <img src="images/fridge.jpg" alt="تعمیر یخچال و فریزر" onerror="this.remove()">
+        </figure>
+        <div>
+          <h3>یخچال و فریزر</h3>
+          <p>رفع مشکل یخ‌نزدن، یخ‌زدگی بیش از حد، صدای کمپرسور، خرابی ترموستات و تعویض گاز.</p>
+          <ul><li>تعمیر</li><li>شارژ گاز</li><li>تعویض قطعه</li></ul>
+        </div>
+      </article>
+      <article class="item">
+        <figure class="ph" data-label="images/service.jpg">
+          <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"><path d="M12 52l22-22M40 14a10 10 0 0 0 10 10l-6 6-10-10z"/><path d="M34 30l18 18-4 4-18-18"/></svg>
+          <img src="images/service.jpg" alt="سرویس و شست‌وشوی کولر گازی" onerror="this.remove()">
+        </figure>
+        <div>
+          <h3>سرویس و شست‌وشو</h3>
+          <p>سرویس دوره‌ای پیش از فصل گرما برای خنکی بهتر، مصرف برق کمتر و عمر بیشتر دستگاه.</p>
+          <ul><li>شست‌وشو</li><li>بازدید گاز</li><li>تمیزکاری فیلتر</li></ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="dark">
+  <div class="wrap">
+    <h2>از تماس تا تحویل دستگاه</h2>
+    <p class="sub">روند کار ما ساده و شفاف است.</p>
+    <div class="steps">
+      <div class="step"><h3>تماس بگیرید</h3><p>مشکل دستگاه را بگویید و زمان مراجعه را هماهنگ کنید.</p></div>
+      <div class="step"><h3>بازدید کارشناس</h3><p>کارشناس در محل عیب را پیدا می‌کند و هزینه را اعلام می‌کند.</p></div>
+      <div class="step"><h3>تعمیر یا نصب</h3><p>با موافقت شما، کار با قطعات مناسب انجام می‌شود.</p></div>
+      <div class="step"><h3>تست و تحویل</h3><p>دستگاه جلوی چشم شما تست می‌شود و تحویل می‌گیرید.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap why">
+    <div>
+      <h2>چرا با ما کار کنید؟</h2>
+      <p class="sub">می‌خواهیم بعد از اولین تماس، خیالتان از دستگاه راحت باشد.</p>
+      <ul>
+        <li><b>اعزام سریع</b><span>هماهنگی در کوتاه‌ترین زمان ممکن.</span></li>
+        <li><b>اعلام هزینه قبل از کار</b><span>بدون هزینه پنهان، با توضیح هر مرحله.</span></li>
+        <li><b>قطعات مناسب و گاز استاندارد</b><span>برای دوام بیشتر تعمیر.</span></li>
+        <li><b>کار تمیز و اصولی</b><span>نصب با رعایت استاندارد و تمیزکاری محل بعد از کار.</span></li>
+      </ul>
+    </div>
+    <div class="gal">
+      <figure class="ph" data-label="images/work1.jpg">
+        <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="2.5"><rect x="6" y="14" width="52" height="22" rx="5"/></svg>
+        <img src="images/work1.jpg" alt="نمونه کار نصب کولر" onerror="this.remove()">
+      </figure>
+      <figure class="ph" data-label="images/work2.jpg">
+        <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="2.5"><circle cx="32" cy="32" r="14"/></svg>
+        <img src="images/work2.jpg" alt="نمونه کار تعمیر" onerror="this.remove()">
+      </figure>
+      <figure class="ph" data-label="images/work3.jpg">
+        <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="2.5"><rect x="16" y="6" width="32" height="52" rx="5"/></svg>
+        <img src="images/work3.jpg" alt="نمونه کار تعمیر یخچال" onerror="this.remove()">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="box">
+      <div>
+        <h2>الان تماس بگیرید</h2>
+        <p>مشکل دستگاه را بگویید تا زمان مراجعه کارشناس را هماهنگ کنیم.</p>
+        <a class="num" href="tel:09053856893">09053856893</a>
+      </div>
+      <div class="areas">
+        <a class="btn" href="tel:09053856893">📞 تماس تلفنی</a>
+        <a class="btn alt" href="sms:09053856893">✉ ارسال پیامک</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>تعمیر، سرویس و نصب کولر گازی و یخچال — تماس: <span class="phone-big">09053856893</span></footer>
+
+<div class="fab"><a class="btn" href="tel:09053856893">📞 تماس فوری: 09053856893</a></div>
+
+</body>
+</html>
